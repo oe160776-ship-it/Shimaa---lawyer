@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090909" />
+    <meta
+      name="description"
+      content="التواصل وحجز موعد مع الأستاذة شيماء عصام المحامية في المنيا."
+    />
+    <title>الأستاذة شيماء عصام المحامية | المنيا</title>
+    <style>
+      :root {
+        --black: #090909;
+        --black2: #171512;
+        --gold: #d7a954;
+        --gold2: #f3d18b;
+        --cream: #faf8f3;
+        --ink: #252525;
+        --muted: #6b6b6b;
+        --line: #e7e2d8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        color: var(--ink);
+        line-height: 1.85;
+        background: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .wrap {
+        width: min(1160px, 92%);
+        margin: auto;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #090909;
+        color: white;
+        border-bottom: 2px solid var(--gold);
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        padding: 12px 0;
+        flex-wrap: wrap;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: bold;
+      }
+      .brand img {
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid var(--gold);
+        border-radius: 50%;
+        background: #111;
+      }
+      .brand small {
+        display: block;
+        color: #e4d2af;
+        font-size: 12px;
+        font-weight: normal;
+      }
+      .links {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+      }
+      .links a:hover {
+        color: var(--gold2);
+      }
+      .nav-cta {
+        background: var(--gold);
+        color: #111 !important;
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+      .hero {
+        background:
+          radial-gradient(ellipse at 70% 20%, #3b2b15 0%, transparent 38%),
+          linear-gradient(120deg, #050505, #191612);
+        color: white;
+        padding: 64px 0 58px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 35px;
+        align-items: center;
+      }
+      .kicker {
+        color: var(--gold2);
+        font-weight: bold;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 5vw, 50px);
+        line-height: 1.4;
+        color: var(--gold2);
+        margin: 8px 0 12px;
+      }
+      .hero h2 {
+        color: white;
+        font-size: 21px;
+        margin: 8px 0;
+      }
+      .hero p {
+        color: #e1ded8;
+        max-width: 680px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 19px;
+        border-radius: 8px;
+        font: inherit;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn-gold {
+        background: linear-gradient(110deg, #f4d38b, #c99a47);
+        color: #15110a;
+      }
+      .btn-outline {
+        border-color: #ffffff70;
+        color: white;
+      }
+      .hero-logo {
+        width: min(330px, 100%);
+        margin: auto;
+        border: 2px solid var(--gold);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow:
+          0 0 0 8px #d7a95412,
+          0 15px 40px #0008;
+      }
+      .hero-logo img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        background: #111;
+      }
+      section {
+        padding: 58px 0;
+      }
+      .cream {
+        background: var(--cream);
+      }
+      .section-head {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 30px;
+      }
+      .section-head .kicker {
+        color: #9b742f;
+      }
+      .section-head h2 {
+        font-size: 30px;
+        color: #17130d;
+        margin: 6px 0;
+      }
+      .section-head p {
+        color: var(--muted);
+        margin: 0;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 17px;
+      }
+      .card {
+        padding: 23px;
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        background: white;
+        box-shadow: 0 8px 22px #1a120808;
+      }
+      .icon {
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: #111;
+        color: var(--gold2);
+        font-size: 25px;
+        border: 1px solid var(--gold);
+      }
+      .card h3 {
+        color: #1a1712;
+        margin: 11px 0 5px;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .fee-box {
+        max-width: 780px;
+        margin: auto;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 28px;
+        text-align: center;
+      }
+      .price {
+        font-size: 42px;
+        font-weight: bold;
+        color: #17130d;
+      }
+      .price small {
+        font-size: 17px;
+      }
+      .terms {
+        border-top: 1px solid var(--line);
+        margin-top: 16px;
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .booking-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        align-items: start;
+      }
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 15px;
+        padding: 24px;
+        background: white;
+      }
+      .panel h3 {
+        margin-top: 0;
+        color: #17130d;
+      }
+      .detail {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .detail:last-of-type {
+        border: 0;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin: 12px 0 5px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 11px 12px;
+        border: 1px solid #cfc8bb;
+        border-radius: 8px;
+        font: inherit;
+        background: white;
+      }
+      textarea {
+        min-height: 85px;
+        resize: vertical;
+      }
+      .form .btn {
+        width: 100%;
+        margin-top: 16px;
+        border: 0;
+      }
+      .small {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .notice {
+        margin-top: 18px;
+        background: white;
+        border-right: 3px solid var(--gold);
+        padding: 12px 15px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      footer {
+        background: #090909;
+        color: #e5ded2;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 13px;
+        border-top: 2px solid var(--gold);
+      }
+      footer p {
+        margin: 5px;
+      }
+      .wa-float {
+        position: fixed;
+        left: 18px;
+        bottom: 18px;
+        background: #169c5a;
+        color: white;
+        padding: 12px 17px;
+        border-radius: 35px;
+        font-weight: bold;
+        z-index: 9;
+        box-shadow: 0 5px 20px #0003;
+      }
+      @media (max-width: 760px) {
+        .hero-grid,
+        .booking-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          padding: 44px 0;
+        }
+        .hero-logo {
+          max-width: 250px;
+          grid-row: 1;
+        }
+        .hero-logo img {
+          height: 230px;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .links {
+          gap: 10px;
+        }
+        .links a {
+          font-size: 13px;
+        }
+        .section-head h2 {
+          font-size: 25px;
+        }
+        section {
+          padding: 43px 0;
+        }
+        .nav {
+          align-items: flex-start;
+        }
+        .brand img {
+          width: 46px;
+          height: 46px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#home"
+          ><img src="LOGO_DATA" alt="لوجو الأستاذة شيماء عصام المحامية" /><span
+            >الأستاذة شيماء عصام المحامية<small
+              >المحاماة والاستشارات القانونية</small
+            ></span
+          ></a
+        >
+        <nav class="links" aria-label="القائمة الرئيسية">
+          <a href="#home">الرئيسية</a><a href="#services">الخدمات</a
+          ><a href="#fee">الاستشارة</a><a href="#office">عنوان المكتب</a>
+          <a
+            class="nav-cta"
+            href="https://wa.me/201070793373"
+            target="_blank"
+            rel="noopener"
+            >احجز عبر واتساب</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="kicker">المحاماة والاستشارات القانونية</div>
+            <h1>الأستاذة شيماء عصام المحامية</h1>
+            <h2>قضايا الأسرة • القضايا المدنية • القضايا الجنائية</h2>
+            <p>
+              للتواصل وطلب موعد لمناقشة الاستفسار القانوني، ومعرفة الخطوات
+              المناسبة بعد مراجعة تفاصيل الحالة والمستندات ذات الصلة.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-gold"
+                href="https://wa.me/201070793373?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF."
+                target="_blank"
+                rel="noopener"
+                >◉ احجز موعدك عبر واتساب</a
+              >
+              <a class="btn btn-outline" href="tel:01070793373"
+                >☎ 01070793373</a
+              >
+            </div>
+          </div>
+          <div class="hero-logo">
+            <img src="LOGO_DATA" alt="الشعار القانوني بالذهبي والأسود" />
+          </div>
+        </div>
+      </section>
+      <section class="cream" id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="kicker">مرحبًا بك</div>
+            <h2>تواصل قانوني بخطوات واضحة</h2>
+            <p>
+              يمكنك طلب موعد للاستفسار عن موضوع قانوني أو مراجعة المستندات أو
+              بحث إمكانية تولّي الملف بعد الاتفاق المسبق.
+            </p>
+          </div>
+          <div class="notice">
+            المعلومات المنشورة تعريفية ولا تمثل رأيًا قانونيًا في قضية بعينها.
+            طلب الموعد لا يعني قبول التوكيل أو ضمان نتيجة محددة.
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="kicker">مجالات العمل</div>
+            <h2>الخدمات القانونية</h2>
+            <p>
+              تُراجع كل حالة على حدة وفقًا للوقائع والمستندات والاتفاق المسبق.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="icon">⚖</div>
+              <h3>قضايا الأسرة</h3>
+              <p>
+                استفسارات وموضوعات الأسرة وفقًا لطبيعة كل حالة وبعد مراجعة
+                التفاصيل.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">▤</div>
+              <h3>القضايا المدنية</h3>
+              <p>
+                استفسارات بشأن المنازعات والحقوق والالتزامات المدنية وفقًا
+                للوقائع والمستندات.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">§</div>
+              <h3>القضايا الجنائية</h3>
+              <p>
+                طلب موعد لمناقشة الموضوع والإجراءات الممكنة بعد معرفة تفاصيل
+                الحالة.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">⌕</div>
+              <h3>الاستشارات القانونية</h3>
+              <p>
+                موعد لمناقشة الاستفسار القانوني وتحديد المعلومات اللازمة للخطوة
+                التالية.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">▣</div>
+              <h3>مراجعة المستندات</h3>
+              <p>
+                الاستفسار عن إمكانية مراجعة المستندات ذات الصلة قبل الاتفاق على
+                العمل.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">✓</div>
+              <h3>بحث تولّي الملف</h3>
+              <p>بحث نطاق العمل والأتعاب وشروط التوكيل في اتفاق واضح ومسبق.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="cream" id="fee">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="kicker">رسوم الاستشارة</div>
+            <h2>قيمة الاستشارة القانونية</h2>
+          </div>
+          <div class="fee-box">
+            <div>رسوم الاستشارة</div>
+            <div class="price">500 <small>جنيه مصري</small></div>
+            <p>يرجى تأكيد الموعد وطريقة الاستشارة قبل الحجز.</p>
+            <div class="terms">
+              إذا اتفقت الأستاذة المحامية على تولّي الملف لاحقًا، تُخصم قيمة
+              الاستشارة من الأتعاب المتفق عليها للملف، وفق الشروط التي يتم
+              الاتفاق عليها بوضوح.
+            </div>
+            <p style="margin-top: 22px">
+              <a
+                class="btn btn-gold"
+                href="https://wa.me/201070793373?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9."
+                target="_blank"
+                rel="noopener"
+                >احجز استشارة</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="office">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="kicker">التواصل والحجز</div>
+            <h2>عنوان المكتب وطلب الموعد</h2>
+            <p>
+              يمكن إرسال طلب حجز طوال أيام الأسبوع، مع تأكيد الموعد عبر واتساب.
+            </p>
+          </div>
+          <div class="booking-grid">
+            <div class="panel">
+              <h3>بيانات المكتب</h3>
+              <div class="detail">
+                <b>الاسم:</b> الأستاذة شيماء عصام المحامية
+              </div>
+              <div class="detail">
+                <b>العنوان:</b> المنيا – 31 شارع الجيش – برج الحرية
+              </div>
+              <div class="detail"><b>التخصصات:</b> أسرة ومدني وجنائي</div>
+              <div class="detail">
+                <b>أيام التواصل:</b> جميع أيام الأسبوع، مع تأكيد الموعد مسبقًا
+              </div>
+              <div class="detail">
+                <b>الهاتف / واتساب:</b>
+                <a
+                  href="https://wa.me/201070793373"
+                  target="_blank"
+                  rel="noopener"
+                  dir="ltr"
+                  >01070793373</a
+                >
+              </div>
+              <a
+                class="btn btn-gold"
+                style="width: 100%; margin-top: 18px"
+                href="https://wa.me/201070793373"
+                target="_blank"
+                rel="noopener"
+                >فتح واتساب مباشرة</a
+              >
+            </div>
+            <div class="panel">
+              <h3>نموذج طلب حجز موعد</h3>
+              <form class="form" id="bookingForm">
+                <label for="clientName">الاسم</label
+                ><input
+                  id="clientName"
+                  type="text"
+                  required
+                  maxlength="80"
+                  placeholder="اكتب اسمك"
+                />
+                <label for="time">الوقت المناسب للتواصل</label
+                ><select id="time" required>
+                  <option value="">اختر الوقت</option>
+                  <option>صباحًا</option>
+                  <option>ظهرًا</option>
+                  <option>مساءً</option>
+                  <option>أي وقت بعد التنسيق</option>
+                </select>
+                <label for="topic">نوع الطلب</label
+                ><select id="topic">
+                  <option>استشارة قانونية</option>
+                  <option>قضية أسرة</option>
+                  <option>قضية مدنية</option>
+                  <option>قضية جنائية</option>
+                  <option>مراجعة مستندات</option>
+                  <option>بحث إمكانية تولّي ملف</option>
+                </select>
+                <label for="note">رسالة مختصرة (اختياري)</label
+                ><textarea
+                  id="note"
+                  maxlength="250"
+                  placeholder="تجنب كتابة بيانات سرية أو أرقام قضايا"
+                ></textarea>
+                <button class="btn btn-gold" type="submit">
+                  إرسال طلب الحجز عبر واتساب
+                </button>
+                <p class="small">
+                  النموذج لا يخزن بياناتك على الموقع؛ يجهز رسالة واتساب لتراجعها
+                  قبل إرسالها.
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="notice">
+            قبل النشر العام، يُرجى التأكد من صحة بيانات المكتب وملاءمة طريقة عرض
+            الخدمات والرسوم للقواعد المهنية المنظمة لمهنة المحاماة.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <p><b>الأستاذة شيماء عصام المحامية</b></p>
+        <p>المنيا – 31 شارع الجيش – برج الحرية | 01070793373</p>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+    <a
+      class="wa-float"
+      href="https://wa.me/201070793373"
+      target="_blank"
+      rel="noopener"
+      >واتساب للحجز</a
+    >
+    <script>
+      const logoData =
+        "data:image/jpeg;base64,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";
+      document
+        .querySelectorAll(".brand img, .hero-logo img")
+        .forEach((img) => (img.src = logoData));
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const name = document.getElementById("clientName").value.trim();
+          const time = document.getElementById("time").value;
+          const topic = document.getElementById("topic").value;
+          const note = document.getElementById("note").value.trim();
+          const message = [
+            "السلام عليكم، أرغب في طلب موعد مع الأستاذة شيماء عصام المحامية.",
+            "الاسم: " + name,
+            "نوع الطلب: " + topic,
+            "الوقت المناسب للتواصل: " + time,
+            note ? "رسالة مختصرة: " + note : "",
+          ]
+            .filter(Boolean)
+            .join("\n");
+          window.open(
+            "https://wa.me/201070793373?text=" + encodeURIComponent(message),
+            "_blank",
+            "noopener",
+          );
+        });
+    </script>
+  </body>
+</html>
